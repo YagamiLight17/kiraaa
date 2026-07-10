@@ -1,0 +1,14 @@
+[Unit]
+Description=RF Noise Generator at 433.92 MHz
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/kira
+ExecStart=/usr/bin/python3 /home/kira/rf_noise_boot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
