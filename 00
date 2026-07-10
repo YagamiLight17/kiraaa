@@ -1,0 +1,9 @@
+# HDMI stability for rpitx
+hdmi_force_hotplug=1
+hdmi_group=1
+hdmi_mode=16          # 1080p 60Hz (change to 2 for 720p if needed)
+hdmi_drive=2
+
+# GPU settings for rpitx
+gpu_freq=250
+force_turbo=1
